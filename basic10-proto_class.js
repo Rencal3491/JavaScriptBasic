@@ -73,3 +73,20 @@ const cat2 = new Cat('꼬앵이', '애옹');
 
 dog2.say();
 cat2.say();
+console.log('------------------');
+// class
+class AnimalClass {
+    constructor(type, name, sound) {
+        this.type = type;
+        this.name = name;
+        this.sound = sound;
+    }
+    say() {
+        console.log(this.sound);
+    }
+}
+const dogClass = new AnimalClass('개', '멈뭄미', '멈멈');
+const catClass = new AnimalClass('고양이', '꼬앵이', '애옹');
+dogClass.say();
+catClass.say();
+
